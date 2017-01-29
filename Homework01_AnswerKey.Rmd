@@ -3,8 +3,8 @@ title: "Homework 01 - ANSWER KEY"
 author: "Melinda K. Higgins"
 date: "January 29, 2017"
 output:
-  github_document: default
   html_document: default
+  github_document: default
   pdf_document: default
   word_document: default
 ---
@@ -151,7 +151,8 @@ gapminder %>%
     group_by(continent) %>%
     summarise(avgLifeExp = mean(lifeExp),
               sdLifeExp = sd(lifeExp)) %>%
-    knitr::kable()
+    knitr::kable(col.names=c("Continent","Average Life Exp","SD Life Exp"),
+                 caption="Means and SD for Life Expectancy by Continent")
 ```
 
 
@@ -284,19 +285,21 @@ My Github repository is located at [https://github.com/melindahiggins2000/N741ga
 ## =========================================
 ## ANSWER KEY - HOMEWORK 01 - TASK 5
 
-Everyone got their homework 01 saved to PDF and uploaded to CANVAS. And everyone emailed their Github accounts to us.
+Everyone got their homework 01 saved to PDF and uploaded to CANVAS (YEA!). And everyone emailed their Github accounts to us.
 
 However, here are a few notes regarding what was seen in your Github accounts - observations only - these are not critiques - these are suggestions for improving your workflow as you move forward:
 
-1. I noticed some of you had multiple R projects (`*.Rproj`) files. You can have just 1 `*.Rproj` file since all this file has in it is the details on your R environment and project options including the link to the Github repository for that project. There should only be 1 R project for 1 Github Repository (for now).
+1. I noticed some of you had multiple R projects (`*.Rproj`) files. You can have just one `*.Rproj` file since all this file has in it is the details on your R environment and project options including the link to the Github repository for that project. There should only be one R project for one Github Repository (for now).
 
 2. Everyone correctly forked a copy of the main `N741gapminder` Github repository (YEA!). However, there were a few who forgot to PUSH their final homework file(s) back up to their own repositories. In other words, for most of you I could see your homework files, but for a few I didn't see them. ALWAYS REMEMBER TO PUSH AND SAVE ALL YOUR FINAL WORK BACK TO GITHUB. Some people did have a copy of the PDF they submitted to CANVAS backed up in their Guthub repos, but the original generating RMD files were not there.
 
-3. There were a variety of ways people completed their homework. Some simply edited the original `GapminderMarkdown.Rmd` file and then turned that in as their homework. Other created a new RMD file (SaveAs) as something like `Homework 1.Rmd` or a variant file name. This is better since this really is a new file not just simply a version of the original. 
+3. There were a variety of ways people completed their homework. Some simply edited the original `GapminderMarkdown.Rmd` file and then turned that in as their homework. Others created a new RMD file (SaveAs) as something like `Homework01.Rmd` or a variant file name. This is better since this really is a new file not just simply a version of the original. 
 
-### ** All in All - GOOD JOB EVERYONE **
+### ** All in All - GOOD JOB EVERYONE! **
 
-### `sessionInfo()`
+### `sessionInfo()` A Good Practice - Add @ End of Document
+
+It is a good idea and practice to ALWAYS add the details of your current "R Session" that produced the document or report. This way, anyone reading your document - including you days, week or years from now - will know which version of R, which packages and on which computer system the document was produced. Simply add the following note and R chunk at the end of your documents.
 
 **NOTE:** This RMD file was generated with the following `sessionInfo()`
 
