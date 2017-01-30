@@ -3,8 +3,8 @@ title: "Homework 01 - ANSWER KEY"
 author: "Melinda K. Higgins"
 date: "January 29, 2017"
 output:
-  html_document: default
   github_document: default
+  html_document: default
   pdf_document: default
   word_document: default
 ---
