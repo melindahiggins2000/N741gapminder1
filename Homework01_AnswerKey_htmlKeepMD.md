@@ -6,7 +6,8 @@ January 29, 2017
 
 1. Create a Github repository for N741 Homework 1. Initialize it with a README file.
 2. In RStudio, create a new project for N741 Homework 1.
-3. Link RStudio to your Github repository for N741 homework 1.
+3. Link RStudio to your Github repository for N741 homework
+
 
 
 
@@ -129,14 +130,17 @@ Using the 1st code example at the `gapminder` Github repository at [https://gith
 aggregate(lifeExp ~ continent, gapminder, median)
 ```
 
-```
-##   continent lifeExp
-## 1    Africa 47.7920
-## 2  Americas 67.0480
-## 3      Asia 61.7915
-## 4    Europe 72.2410
-## 5   Oceania 73.6650
-```
+<div class="kable-table">
+
+continent    lifeExp
+----------  --------
+Africa       47.7920
+Americas     67.0480
+Asia         61.7915
+Europe       72.2410
+Oceania      73.6650
+
+</div>
 
 ### **Homework 01 Exercise - Task 2**
 
@@ -153,14 +157,17 @@ First the minimums.
 aggregate(lifeExp ~ continent, gapminder, min)
 ```
 
-```
-##   continent lifeExp
-## 1    Africa  23.599
-## 2  Americas  37.579
-## 3      Asia  28.801
-## 4    Europe  43.585
-## 5   Oceania  69.120
-```
+<div class="kable-table">
+
+continent    lifeExp
+----------  --------
+Africa        23.599
+Americas      37.579
+Asia          28.801
+Europe        43.585
+Oceania       69.120
+
+</div>
 
 Next the maximums.
 
@@ -169,14 +176,17 @@ Next the maximums.
 aggregate(lifeExp ~ continent, gapminder, max)
 ```
 
-```
-##   continent lifeExp
-## 1    Africa  76.442
-## 2  Americas  80.653
-## 3      Asia  82.603
-## 4    Europe  81.757
-## 5   Oceania  81.235
-```
+<div class="kable-table">
+
+continent    lifeExp
+----------  --------
+Africa        76.442
+Americas      80.653
+Asia          82.603
+Europe        81.757
+Oceania       81.235
+
+</div>
 
 ## =========================================
 ## ANSWER KEY - HOMEWORK 01 - TASK 2
@@ -188,14 +198,17 @@ Mean life expectancy by continent.
 aggregate(lifeExp ~ continent, gapminder, mean)
 ```
 
-```
-##   continent  lifeExp
-## 1    Africa 48.86533
-## 2  Americas 64.65874
-## 3      Asia 60.06490
-## 4    Europe 71.90369
-## 5   Oceania 74.32621
-```
+<div class="kable-table">
+
+continent     lifeExp
+----------  ---------
+Africa       48.86533
+Americas     64.65874
+Asia         60.06490
+Europe       71.90369
+Oceania      74.32621
+
+</div>
 
 The standard deviation for life expectancy by continent.
 
@@ -204,14 +217,17 @@ The standard deviation for life expectancy by continent.
 aggregate(lifeExp ~ continent, gapminder, sd)
 ```
 
-```
-##   continent   lifeExp
-## 1    Africa  9.150210
-## 2  Americas  9.345088
-## 3      Asia 11.864532
-## 4    Europe  5.433178
-## 5   Oceania  3.795611
-```
+<div class="kable-table">
+
+continent      lifeExp
+----------  ----------
+Africa        9.150210
+Americas      9.345088
+Asia         11.864532
+Europe        5.433178
+Oceania       3.795611
+
+</div>
 
 --- 
 

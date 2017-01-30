@@ -5,13 +5,15 @@ date: "January 29, 2017"
 output:
   html_document:
     keep_md: true
+    df_print: kable
 ---
 
 ## **Homework 01 SETUP**
 
 1. Create a Github repository for N741 Homework 1. Initialize it with a README file.
 2. In RStudio, create a new project for N741 Homework 1.
-3. Link RStudio to your Github repository for N741 homework 1.
+3. Link RStudio to your Github repository for N741 homework
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
